@@ -27,6 +27,11 @@ const routes: Routes = [
     path: 'receptor',
     loadChildren: () => import('./page/receptor/receptor.module').then( m => m.ReceptorPageModule)
   },
+  {
+    path: 'login',
+    loadChildren: () => import('./page/login/login.module').then( m => m.LoginPageModule)
+  },
+
 ];
 
 @NgModule({
