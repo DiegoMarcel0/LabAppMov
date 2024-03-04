@@ -11,7 +11,7 @@ export class AlumnoService {
     if(this.alumnos.length>0){
       alumno.id=this.alumnos.length+1;
     }else {
-      alumno.id=1
+      alumno.id
     }
     this.alumnos.push(alumno);
   }

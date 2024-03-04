@@ -30,7 +30,19 @@ const routes: Routes = [
   {
     path: 'login',
     loadChildren: () => import('./page/login/login.module').then( m => m.LoginPageModule)
+  },  {
+    path: 'receta',
+    loadChildren: () => import('./page/receta/receta.module').then( m => m.RecetaPageModule)
   },
+  {
+    path: 'detalle-receta',
+    loadChildren: () => import('./page/detalle-receta/detalle-receta.module').then( m => m.DetalleRecetaPageModule)
+  },
+  {
+    path: 'receptor-receta',
+    loadChildren: () => import('./page/receptor-receta/receptor-receta.module').then( m => m.ReceptorRecetaPageModule)
+  },
+
 
 ];
 
